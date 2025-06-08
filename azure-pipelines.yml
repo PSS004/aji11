@@ -1,0 +1,17 @@
+
+
+trigger:
+- master
+
+pool:
+  name: Default
+
+steps:
+- script: echo myfirst azure maven application!
+  displayName: 'Run a one-line script'
+
+- script: mvn clean install
+  displayName: 'building a maven application'
+
+- script: java -jar target/maven99-1.0-SNAPSHOT.jar
+  displayName: 'running a maven application'
