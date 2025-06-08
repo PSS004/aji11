@@ -6,7 +6,7 @@ pipeline{
 	stages{
 		stage('checkout'){
 			steps{
-				git branch:'master', url='https://github.com/PSS004/aji11.git'
+				git branch:'master', url:'https://github.com/PSS004/aji11.git'
 			}
 		}
 		stage('Build'){
